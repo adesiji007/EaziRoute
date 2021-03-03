@@ -1,0 +1,29 @@
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\bin\Debug\EaziRoute.dll
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\bin\Debug\EaziRoute.pdb
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\bin\Debug\EaziRoute.EaziRoute.apk
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\bin\Debug\EaziRoute.EaziRoute-Signed.apk
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\EaziRoute.csprojResolveAssemblyReference.cache
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\EaziRoute.dll
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\EaziRoute.pdb
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\android\bin\EaziRoute.EaziRoute.apk
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\layout\home.xml
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\layout\loginsystemapp.xml
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\layout\main.xml
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\values\strings.xml
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\icon.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\arrow1.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\arrow2.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\arrow3.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\favourite.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\help_me!.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\home.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\navigate_to.....png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\postcode.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\recent_destination.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\search-route.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\res\drawable\routes.png
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\R.cs.flag
+C:\Users\dwels\onedrive\documents\visual studio 2017\Projects\EaziRoute\EaziRoute\obj\Debug\uploadflags.txt
+D:\EaziRoute\EaziRoute\obj\Debug\EaziRoute.csprojResolveAssemblyReference.cache
+D:\EaziRoute\EaziRoute\obj\Debug\EaziRoute.dll
+D:\EaziRoute\EaziRoute\obj\Debug\EaziRoute.pdb

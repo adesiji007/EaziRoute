@@ -1,0 +1,179 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Dec 06, 2017 at 08:59 AM
+-- Server version: 5.7.11
+-- PHP Version: 5.5.38
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `eazyroutes`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `journey`
+--
+
+CREATE TABLE `journey` (
+  `jour_id` int(11) NOT NULL,
+  `users` varchar(50) NOT NULL,
+  `journey_frequency` varchar(50) NOT NULL,
+  `time` time(4) NOT NULL,
+  `distance` double(10,6) NOT NULL,
+  `date` date NOT NULL,
+  `weekdays` varchar(50) NOT NULL,
+  `routes_description` varchar(4500) NOT NULL,
+  `duration` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `journey`
+--
+
+INSERT INTO `journey` (`jour_id`, `users`, `journey_frequency`, `time`, `distance`, `date`, `weekdays`, `routes_description`, `duration`) VALUES
+(1, 'Tim', '4', '12:30:00.0000', 30.000000, '2016-12-06', 'Monday', 'Hartlepool, Head west on Middleton Rd/B1376 toward Addison Rd, 0.2 mi,Continue onto Hart Ln, 0.9 mi, At the roundabout, take the 2nd exit and stay on Hart Ln, 1.5 mi, At the roundabout, take the 1st exit onto A179, 2.0 mi, Turn right to merge onto A19 toward Durham/Sunderland, 3.1 mi, Take the A181 exit toward B1281/Durham/Blackhall, 0.2 mi, Turn left onto A181 (signs for Durham/Wingate, 2.9 mi, At the roundabout, take the 2nd exit and stay on A181,3.9 mi,Continue straight onto B1198, 1.3 mi, Turn right onto Willow Tree Ave/A177 Continue to follow A177,0.8 mi, At the roundabout, take the 1st exit onto Stockton Rd/A177, 0.2 mi,Turn left onto South Rd/A177, 66 ft, Durham University, Durham, DH1. ', '45 minutes'),
+(2, 'Tim', '4', '12:30:00.0000', 11.000000, '2017-08-17', 'Tueday', 'Chester lee street UK, Chester-le-Street,Head southeast toward Picktree Ln/B6313,62 ft, Turn left onto Picktree Ln/B6313, 174 ft, At the roundabout, take the 1st exit and stay on Picktree Ln/B6313,  0.3 mi, At the roundabout, take the 2nd exit onto A167, 0.3 mi, At the roundabout, take the 2nd exit onto the A1(M) ramp to Newcastle/Gateshead, 0.4 mi, Merge onto A1(M, 2.1 mi, Keep left at the fork to stay on A1(M), 0.1 mi, continue onto A1, 0.9 mi, Take the A167 exit toward Gateshead (South), 0.3 mi,  At the roundabout, take the 3rd exit onto Durham Rd/A167, 2.8 mi, Turn left onto Prince Consort Rd, 0.3 mi, Turn left onto Exeter St, 390 ft, Gateshead      ', '38 minutes'),
+(3, 'Smith', '3', '22:10:10.0000', 11.200000, '2017-10-15', 'Tuesday', 'Sunderland, Merge onto A19 2.0 mi Slight left towards Newcastle Rd/A184 0.1 mi Continue straight onto Newcastle Rd/A184 Continue to follow A184 3.2 mi  At the roundabout, take the 2nd exit onto Abbotsford Rd/A184 Continue to follow A184 2.0 mi, At the roundabout, take the 3rd exit onto Gateshead Hwy/A184, Continue to follow Gateshead Hwy, 0.4 mi, Continue onto Tyne Bridge/A167, Continue to follow A167, 0.3 mi, Keep right to continue on A167(M), 1.2 mi, Continue onto A167, 262 ft, Take the B1318 exit towards City Centre, 0.1 mi ,At the roundabout, take the 1st exit onto B1318, 0.2 mi, At the roundabout, take the 3rd exit onto Queen Victoria Rd, 0.3 mi, Newcastle upon Tyne', '36 minutes'),
+(4, 'Solomon', '4', '21:39:20.0000', 21.900000, '2017-05-23', 'Wednesday', 'From Sunderland University, Head east on Clanny St towards St Michael', '45 minutes'),
+(5, 'Smith', '2', '27:29:10.0000', 27.200000, '2017-02-27', 'Thursday', 'Hartlepool, Head west on Middleton Rd/B1376 toward Addison Rd, 0.2 mi,Continue onto Hart Ln, 0.9 mi, At the roundabout, take the 2nd exit and stay on Hart Ln, 1.5 mi, At the roundabout, take the 1st exit onto A179, 2.0 mi, Turn right to merge onto A19 toward Durham/Sunderland, 3.1 mi, Take the A181 exit toward B1281/Durham/Blackhall, 0.2 mi, Turn left onto A181 (signs for Durham/Wingate, 2.9 mi, At the roundabout, take the 2nd exit and stay on A181,3.9 mi,Continue straight onto B1198, 1.3 mi, Turn right onto Willow Tree Ave/A177 Continue to follow A177,0.8 mi, At the roundabout, take the 1st exit onto Stockton Rd/A177, 0.2 mi,Turn left onto South Rd/A177, 66 ft, Durham University, urham, DH1', '50 minutes'),
+(6, 'Ola', '7', '16:26:10.0000', 7.400000, '2017-11-25', 'Friday', 'Chester lee street UK, Chester-le-Street,Head southeast toward Picktree Ln/B6313,62 ft, Turn left onto Picktree Ln/B6313, 174 ft, At the roundabout, take the 1st exit and stay on Picktree Ln/B6313,  0.3 mi, At the roundabout, take the 2nd exit onto A167, 0.3 mi, At the roundabout, take the 2nd exit onto the A1(M) ramp to Newcastle/Gateshead, 0.4 mi, Merge onto A1(M, 2.1 mi, Keep left at the fork to stay on A1(M), 0.1 mi, continue onto A1, 0.9 mi, Take the A167 exit toward Gateshead (South), 0.3 mi,  At the roundabout, take the 3rd exit onto Durham Rd/A167, 2.8 mi, Turn left onto Prince Consort Rd, 0.3 mi, Turn left onto Exeter St, 390 ft, Gateshead ', '42 minutes'),
+(7, 'Tim', '2', '16:20:00.0000', 7.600000, '2017-01-12', 'Sunday', 'Gatehead, Gatehead Town Center, Gateshead, Head east on Exeter St toward Prince Consort Rd,  390 ft,Turn right onto Prince Consort Rd, 0.3 mi, Turn right onto Durham Rd/A167, 2.7 mi, At the roundabout, take the 2nd exit onto the A1 ramp to A1(M)/Durham, 0.4 mi, Merge onto A1, 0.4 mi, Continue onto A1(M) (signs for Durham), 8.5 mi, At junction 62, take the A690 exit to underland/Durham/Consett/A691, 0.2 mi, At the roundabout, take the 3rd exit onto A690, 2.0 mi, At the roundabout, take the 3rd exit onto Leazes Rd/A690, Continue to follow A690, 0.7 mi, Turn right at Millburngate, 82 ft, Keep left to continue on A690, 0.1 mi, At the roundabout, take the 3rd exit and stay on A690, 0.3 mi, Durham ', '35.42 minutes'),
+(8, 'Tim', '1', '17:10:12.0000', 7.800000, '2017-02-23', 'Tursday', 'South Shields, Head southwest on Dale St toward Woodbine St, 128 ft, Turn right onto Woodbine St, 115 ft, Turn left at the 1st cross street onto Ocean Rd/A183\r\nContinue to follow A183, Go through 1 roundabout, 0.3 mi, At the roundabout, take the 3rd exit onto Beach Rd/A183, 0.1 mi, Turn right onto Crossgate/A194, 0.2 mi, At the roundabout, take the 2nd exit onto Western Approach/A194, 0.2 mi, At the roundabout, take the 2nd exit and stay on Western Approach/A194, 0.1 mi, At the roundabout, take the 2nd exit onto A194, 0.2 mi, At the roundabout, take the 2nd exit and stay on A194, Go through 1 roundabout, 0.5 mi, At the roundabout, take the 2nd exit and stay on A194, Go through 2 roundabouts, 0.5 mi, At the roundabout, take the 1st exit onto Newcastle Rd/A194, 0.1 mi, At the roundabout, take the 2nd exit and stay on Newcastle Rd/A194, 0.2 mi, At the roundabout, take the 2nd exit and stay on Newcastle Rd/A194, Continue to follow A194, 0.6 mi, At the roundabout, take the 2nd exit onto Leam Ln/A194, 0.3 mi, At the roundabout, take the 2nd exit and stay on Leam Ln/A194, 1.6 mi, At the roundabout, take the 2nd exit and stay on Leam Ln/A194, 0.6 mi, At the roundabout, take the 4th exit onto the A184/B1288 ramp to Gateshead/Newcastle/Springwell, 0.2 mi, Keep right and merge onto A184\r\n1.5 mi, At the roundabout, take the 2nd exit onto Abbotsford Rd/A184, Continue to follow A184, 2.0 mi, At the roundabout, take the 3rd exit onto Gateshead Hwy/A184\r\nContinue to follow Gateshead Hwy, 0.4 mi, Continue onto Tyne Bridge/A167\r\nContinue to follow A167, 0.3 mi, Keep right to continue on A167(M), 1.2 mi, Continue onto A167, 262 ft, Take the B1318 exit toward City Centre, 0.1 mi, At the roundabout, take the 1st exit onto B1318, 0.2 mi, At the roundabout, take the 3rd exit onto Queen Victoria Rd, 0.3 mi, Newcastle upon Tyne\r\n', '56 minutes'),
+(9, 'Ola', '8', '07:10:20.0000', 86.100000, '2017-10-12', 'Monday', 'South Shields, Head southwest on Dale St toward Woodbine St, 128 ft, Turn right onto Woodbine St, 115 ft, Turn left at the 1st cross street onto Ocean Rd/A183\r\nContinue to follow A183, Go through 1 roundabout, 0.3 mi, At the roundabout, take the 3rd exit onto Beach Rd/A183, 0.1 mi, Turn right onto Crossgate/A194, 0.2 mi, At the roundabout, take the 2nd exit onto Western Approach/A194, 0.2 mi, At the roundabout, take the 2nd exit and stay on Western Approach/A194, 0.1 mi, At the roundabout, take the 2nd exit onto A194, 0.2 mi, At the roundabout, take the 2nd exit and stay on A194, Go through 1 roundabout, 0.5 mi, At the roundabout, take the 2nd exit and stay on A194, Go through 2 roundabouts, 0.5 mi, At the roundabout, take the 1st exit onto Newcastle Rd/A194, 0.1 mi, At the roundabout, take the 2nd exit and stay on Newcastle Rd/A194, 0.2 mi, At the roundabout, take the 2nd exit and stay on Newcastle Rd/A194, Continue to follow A194, 0.6 mi, At the roundabout, take the 2nd exit onto Leam Ln/A194, 0.3 mi, At the roundabout, take the 2nd exit and stay on Leam Ln/A194, 1.6 mi, At the roundabout, take the 2nd exit and stay on Leam Ln/A194, 0.6 mi, At the roundabout, take the 4th exit onto the A184/B1288 ramp to Gateshead/Newcastle/Springwell, 0.2 mi, Keep right and merge onto A184\r\n1.5 mi, At the roundabout, take the 2nd exit onto Abbotsford Rd/A184, Continue to follow A184, 2.0 mi, At the roundabout, take the 3rd exit onto Gateshead Hwy/A184\r\nContinue to follow Gateshead Hwy, 0.4 mi, Continue onto Tyne Bridge/A167\r\nContinue to follow A167, 0.3 mi, Keep right to continue on A167(M), 1.2 mi, Continue onto A167, 262 ft, Take the B1318 exit toward City Centre, 0.1 mi, At the roundabout, take the 1st exit onto B1318, 0.2 mi, At the roundabout, take the 3rd exit onto Queen Victoria Rd, 0.3 mi, Newcastle upon Tyne\r\n', '55 minutes'),
+(10, 'Smith', '2', '24:10:11.0000', 13.600000, '2017-10-20', 'Wednesday', 'Chester-le-Street,Head sou...	Newcastle upon Tyne towards South Shield', '48 minutes'),
+(11, 'Ola', '8', '12:10:12.0000', 11.800000, '2017-10-10', 'Thursday', 'Chester-le-Street,Head south west street, turn right towards Sunderland road and move to A19 towards Hartlepool', '32 minutes'),
+(12, 'Tim', '2', '14:30:10.0000', 12.200000, '2017-10-02', 'Friday', 'Chester-le-Street,Head move round the mini round about and turn right toward durham road', '28 minutes'),
+(13, 'Ola', '1', '22:12:10.0000', 8.000000, '2017-02-13', 'Tuesday', 'Sunderland Head southeast toward Prince St, 89 ft, Turn left onto Prince St 95 ft Turn left onto Middle St 98 ft Turn right onto York St 154 ft Continue onto Cumberland St 217 ft Turn left onto St Mary\'s Way/A183 Continue to follow A183 0.3 mi At the roundabout, take the 2nd exit onto Silksworth Row/A1231 0.1 mi At the roundabout, take the 4th exit onto Trimdon St/A1231 0.3 mi At the roundabout, take the 3rd exit onto Trimdon St W/A1231 Continue to follow A1231 0.4 mi At the roundabout, take the 3rd exit and stay on A1231 0.5 mi Turn left onto Wessington Way/A1231 1.1 mi At the roundabout, take the 2nd exit and stay on Wessington Way/A12310.5 mi At the roundabout, take the 2nd exit and stay on Wessington Way/A1231 0.5 mi At the roundabout, take the 2nd exit and stay on Wessington Way/A1231 0.3 mi At the roundabout, take the 2nd exit onto Sunderland Hwy/A1231 3.2 mi At the roundabout, take the 2nd exit and stay on Sunderland Hwy/A1231 1.0 mi Turn left toward A12310.1 mi Continue straight onto A1231 0.3 mi Merge onto A1 via the ramp to 69/Hexham/Newcastle Airport/Gateshead 8.9 mi Take the A69/A186 ramp to Hexham/City (West) 0.2 mi At the roundabout, take the 1st exit onto A69 11.5 mi At Styford Roundabout, take the 3rd exit onto Corbridge Bypass Rd/A69 Continue to follow A69 5.6 mi At the roundabout, take the 2nd exit and stay on A69 15.4 mi\r\nAt the roundabout, take the 1st exit onto Haltwhistle Bypass Rd/A69 Continue to follow A69 13.3 mi\r\nAt Brampton Roundabout, take the 2nd exit onto Brampton Bypass/A689 Continue to follow A689 2.9 mi At the roundabout, take the 1st exit and stay on A689 3.4 mi At the roundabout, take the 3rd exit and stay on A689 2.2 mi At the roundabout, take the 4th exit onto the M6 ramp to Scotland/Glasgow/Edinburgh/Dumfries 0.4 mi Merge onto M6 6.3 mi Continue onto A74(M) 48.6 mi Continue onto M74 36.7 mi At junction 22, exit onto M8 toward Glasgow Airport/Greenock 5.6 mi At junction 27, exit onto Renfrew Rd/A741 toward Paisley/Renfrew 0.2 mi Merge onto Renfrew Rd/A741 0.1 mi At the roundabout, take the 2nd exit onto Washington Rd 0.1 mi Washington Rd, Paisley, PA3 4EP\r\n', '3 hrs 52 minutes'),
+(14, 'Ola', '3', '21:15:01.0000', 8.000000, '2017-02-13', 'Wednesday', 'From Sunderland - Turn left onto St Mary\'s Way/A183 Continue to follow A183 0.3 mi At the roundabout, take the 3rd exit onto Livingstone Rd/A183 Continue to follow A183 0.4 mi At the roundabout, take the 2nd exit onto W Wear St/A1018 Continue to follow A1018 Go through 2 roundabouts 0.6 mi At the roundabout, take the 2nd exit onto Hendon Rd/A1018 0.3 mi At the roundabout, take the 2nd exit onto Commercial Rd/A1018 Continue to follow A1018 1.8 mi  At the roundabout, take the 1st exit and stay on A10181.0 mi At the roundabout, take the 2nd exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit onto Stockton Rd/A1018 0.3 mi At the roundabout, take the 2nd exit onto the A19 slip road to Teesside 1.3 mi Merge onto A19 10.4 mi Merge onto A179 via the slip road to Hartlepool 2.2 mi At the roundabout, take the 3rd exit 1.3 mi Continue onto Hart Ln 0.2 mi At the roundabout, take the 1st exit and stay on Hart Ln 0.9 mi Continue onto Middleton Rd/B1376 0.2 mi Hartlepool', '42 minutes'),
+(23, 'Ola', '2', '22:12:10.0000', 8.000000, '2017-02-13', 'Tuesday', 'from Sunderland to Washington road', '27 minutes'),
+(15, 'Tim', '2', '12:20:10.0000', 36.000000, '2017-12-05', 'Mon', 'Stockton-on-Tees Head west on Bishopton Rd toward Grays Rd 0.4 mi Turn right onto Bishopton Ave/A1027 0.5 mi At the roundabout, take the 2nd exit onto A1027 1.3 mi At the roundabout, take the 2nd exit and stay on A1027 0.5 mi At the roundabout, take the 1st exit onto the A19 ramp to A689/Sunderland/Durham/Hartlepool 0.2 mi Merge onto A19 18.0 mi Take the A1018 ramp to Sunderland 1.5 mi At the roundabout, take the 2nd exit onto Stockton Rd/A1018 0.3 mi At the roundabout, take the 3rd exit onto A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 1.0 mi At the roundabout, take the 1st exit onto Salterfen Rd/B1405 Continue to follow B1405 Go through 1 roundabout 1.0 mi At the roundabout, take the 1st exit onto Leechmere Rd/B1405 0.6 mi At the roundabout, take the 3rd exit onto Tunstall Rd Go through 1 roundabout 0.9 mi At the roundabout, take the 2nd exit and stay on Tunstall Rd 0.2 mi\r\nTunstall Rd turns right and becomes Thornhill Cres 0.1 mi At the roundabout, take the 2nd exit onto St Michaels Way/A1231 0.1 mi Turn left onto Chester Rd/A183 108 ft University of Sunderland, City Campus, Edinburgh Building, Chester Rd, Sunderland SR1 3SD\r\n', '27.3'),
+(16, 'Ola', '1', '13:12:01.0000', 281.200000, '2017-11-21', 'Tuesday', 'Sunderland Empire Theatre, Head west on High St W toward Paley St 233 ft Turn left onto St Michaels Way/A1231/A183 Continue to follow St Michaels Way/A1231 0.2 mi At the roundabout, take the 2nd exit onto Grange Terrace/A1231 Continue to follow A1231 1.0 mi At the roundabout, continue straight onto Commercial Rd/A1018 Continue to follow A1018 1.8 mi At the roundabout, take the 1st exit and stay on A1018 1.0 mi At the roundabout, take the 2nd exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit onto Stockton Rd/A1018 0.3 mi At the roundabout, take the 2nd exit onto the A19 ramp to Teesside 1.3 mi Merge onto A19 45.6 mi Continue onto A168 6.7 mi Merge onto A1(M) via the ramp on the right to Wetherby 0.8 mi\r\nMerge onto A1(M) 24.4 mi  Keep left at the fork to stay on A1(M) 10.6 mi Continue onto A1 7.7 mi Continue onto A1(M) (signs for Red House/The South/M18/M1) 15.5 mi Continue onto A1 Parts of this road may be closed at certain times or days 72.5 mi Continue onto A1(M) (signs for London) 11.3 mi\r\nKeep left at the fork to continue on A14, follow signs for  London(E)/Huntingdon/M11/Cambridge/Stansted/Airport 16.9 mi Keep right to continue on M11, follow signs for London 49.5 mi At junction 4, take the A406 (S) exit to A12/A13/N Circular 0.5 mi Merge onto N Circular Rd 4.7 mi At the roundabout, take the 2nd exit onto the A13 ramp to Central London/Isle of Dogs/Canary Wharf 0.3 mi Keep right at the fork, follow signs for A13 and merge onto Newham Way/A13 2.6 mi Slight right to stay on Newham Way/A13 Continue to follow A13 0.5 mi\r\nContinue onto E India Dock Rd/A1261Continue to follow A1261 1.2 mi Keep right to continue on Limehouse Link Tunnel/A1203 Continue to follow A1203 Parts of this road may be closed at certain times or days 2.6 mi Merge onto Tower Hill/A100 328 ft Continue onto Minories/A1211 Entering toll zone Leaving toll zone 453 ft Continue straight onto Minories Entering toll zone 0.2 mi Turn left onto Aldgate 331 ft Continue onto Leadenhall St 0.3 mi Turn left onto Gracechurch St/A1213 Continue to follow A1213 0.2 mi Turn left onto King William St/A3 Continue to follow A3  0.2 mi London Bridge, London, SE1\r\n', '54 hrs 41 minutes'),
+(17, 'Solomon', '7', '07:09:00.0000', 19.100000, '2017-12-06', 'Wednesday', 'Newcastle upon Tyne Head south on Queen Victoria Rd toward St Thomas\' St 164 ft Continue onto St Thomas\' Terrace 177 ft At the roundabout, take the 1st exit onto Leazes Ln 351 ft Continue onto Terrace Pl 0.2 mi Turn right onto Strawberry Pl 0.1 mi Turn left onto Gallowgate/A189 236 ft Turn right onto Gallowgate/St James\' Blvd/A189 Continue to follow A189 1.2 mi Continue onto A189 0.1 mi\r\nContinue onto A184 1.0 mi Keep left at the fork, follow signs for A1/A1(M)/Consett/A692 and merge onto A1 0.2 mi Merge onto A1 4.2 mi Continue onto A1(M) (signs for Durham) 8.5 mi At junction 62, take the A690 exit to Sunderland/Durham/Consett/A691 0.2 mi At the roundabout, take the 3rd exit onto A690 2.0 mi At the roundabout, take the 3rd exit onto Leazes Rd/A690 0.4 mi Turn left onto New Elvet 0.3 mi New Elvet turns slightly left and becomes Hallgarth St 0.3 mi At the roundabout, take the 2nd exit onto Stockton Rd/A177 0.3 mi Turn left onto South Rd/A177 66 ft Durham University, Durham, DH1\r\n', '26 minutes'),
+(18, 'Tim', '2', '11:23:02.0000', 181.600000, '2017-11-02', 'Thursday', 'Leicester Head northeast on Vaughan Way/A594 toward Highcross St/A50 0.2 mi Turn left onto St. Margaret\'s Way/A6 0.4 mi Slight left onto Ravensbridge Dr 456 ft Turn right to stay on Ravensbridge Dr 0.2 mi Continue onto Anstey Ln/B5327 1.4 mi At the roundabout, take the 2nd exit onto Anstey Ln/A5630 0.1 mi At the roundabout, take the 2nd exit and stay on Anstey Ln/A5630 0.6 mi At the roundabout, take the 4th exit onto the A46 ramp to A6/Newark/Loughboro\' 0.4 mi Merge onto Leicester Western Bypass/A46 4.2 mi Slight left toward A46 0.2 mi Merge onto A46 28.3 mi At the roundabout, take the 3rd exit and stay on A46 1.7 mi At the roundabout, take the 2nd exit onto Great N Rd/A616 0.5 mi At the roundabout, take the 1st exit and stay on Great N Rd/A616 1.0 mi At the roundabout, take the 3rd exit onto Great N Rd/B6325 1.2 mi At the roundabout, take the 3rd exit onto the A1 ramp to A638/Doncaster/Retford/Cromwell/Carlton-on-Trent/Sutton-on-Trent 0.4 mi Merge onto A1 22.9 mi Keep right to continue on A1(M), follow signs for The North/Doncaster 15.4 mi Continue onto Doncaster Bypass/A1 Continue to follow A1 7.8 mi Keep right to continue on A1(M), follow signs for Wetherby/Manchester/Leeds/M62 34.9 mi Take the A168 exit toward A19/Thirsk/Teesside 1.3 mi\r\nContinue onto A168 6.7 mi Continue onto A19 45.3 mi Take the A1018 ramp to Sunderland 1.5 mi At the roundabout, take the 2nd exit onto Stockton Rd/A1018 0.3 mi At the roundabout, take the 3rd exit onto A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 1.0 mi At the roundabout, take the 1st exit onto Salterfen Rd/B1405 Continue to follow B1405 Go through 1 roundabout 1.0 mi At the roundabout, take the 1st exit onto Leechmere Rd/B1405 0.6 mi At the roundabout, take the 3rd exit onto Tunstall Rd Go through 1 roundabout 0.9 mi At the roundabout, take the 2nd exit and stay on Tunstall Rd 0.2 mi Tunstall Rd turns right and becomes Thornhill Cres 0.1 mi At the roundabout, take the 2nd exit onto St Michaels Way/A1231 0.1 mi Turn left onto Chester Rd/A183 108 ft University of Sunderland, City Campus, Edinburgh Building, Chester Rd, Sunderland SR1 3SD\r\n', '3 hrs 11 minutes'),
+(19, 'Solomon', '6', '09:02:11.0000', 30.400000, '2017-11-23', 'Thursday', 'Middlesbrough College Head southwest on Dock St toward Lower E St 0.1 mi\r\nContinue onto Bridge St E 299 ft Bridge St E turns slightly right and becomes Lower Gosford St 0.1 mi\r\nTurn left onto Queen\'s Square/A178 276 ft  Turn right onto Bridge St W/A178 Continue to follow A178 0.6 mi At the roundabout, take the 3rd exit onto the A66 ramp to A19/Stockton/Airport 0.3 mi\r\nMerge onto A66 1.1 mi Take the A19 N ramp 0.6 mi Merge onto A19 21.1 mi Take the A1018 ramp to Sunderland 1.5 mi At the roundabout, take the 2nd exit onto Stockton Rd/A1018 0.3 mi\r\nAt the roundabout, take the 3rd exit onto A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 0.3 mi At the roundabout, take the 1st exit and stay on A1018 1.0 mi At the roundabout, take the 1st exit onto Salterfen Rd/B1405 Continue to follow B1405 Go through 1 roundabout 1.0 mi\r\nAt the roundabout, take the 1st exit onto Leechmere Rd/B1405 0.6 mi At the roundabout, take the 3rd exit onto Tunstall Rd Go through 1 roundabout 0.9 mi At the roundabout, take the 2nd exit and stay on Tunstall Rd 0.2 mi Tunstall Rd turns right and becomes Thornhill Cres 0.1 mi At the roundabout, take the 2nd exit onto St Michaels Way/A1231 0.1 mi Turn left onto Chester Rd/A183 108 ft University of Sunderland, City Campus, Edinburgh Building, Chester Rd, Sunderland SR1 3SD\r\n', '39 minutes');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `journey_location`
+--
+
+CREATE TABLE `journey_location` (
+  `jour_loc_id` int(10) NOT NULL,
+  `jour_id` int(10) NOT NULL,
+  `loc_id` int(10) NOT NULL,
+  `type` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `journey_location`
+--
+
+INSERT INTO `journey_location` (`jour_loc_id`, `jour_id`, `loc_id`, `type`) VALUES
+(1, 1, 1, 'starting point'),
+(2, 1, 1, 'Home'),
+(3, 1, 2, 'second location'),
+(4, 2, 2, 'school'),
+(5, 3, 3, 'work'),
+(6, 3, 5, 'work'),
+(7, 4, 3, 'work'),
+(8, 4, 6, 'seminal'),
+(9, 5, 2, 'seminal'),
+(10, 5, 7, 'seminal'),
+(11, 6, 5, 'semnal'),
+(12, 6, 6, 'conference'),
+(13, 7, 2, 'confeence'),
+(14, 7, 4, 'seminal'),
+(14, 8, 7, 'work'),
+(15, 8, 10, 'seminal'),
+(16, 9, 7, 'work'),
+(17, 9, 8, 'seminal');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `location`
+--
+
+CREATE TABLE `location` (
+  `loc_id` int(11) NOT NULL,
+  `address` varchar(125) NOT NULL,
+  `start_location` varchar(20) NOT NULL,
+  `finish_location` varchar(20) NOT NULL,
+  `start_longitude` float NOT NULL,
+  `start_latitude` float NOT NULL,
+  `finish_longitude` float NOT NULL,
+  `finish_latitude` float NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`loc_id`, `address`, `start_location`, `finish_location`, `start_longitude`, `start_latitude`, `finish_longitude`, `finish_latitude`) VALUES
+(1, '20 sandgate close, coxhoe', 'coxhoe', 'Newcastle University', 54.7205, -1.50618, 51.5722, -0.78786),
+(2, 'University of Newcastle, Newcastle upon Tyne', 'Newcastle Uni', 'Sunderland Uni', 54.9803, -1.61571, 54.9045, -1.39135),
+(3, 'Fowler St, South Shields NE33 1NS', 'Sunderland Uni', 'South Shield', 54.9045, -1.39135, 54.9974, -1.43074),
+(4, 'University of Sunderland', 'Sunderland', 'Hartlepool', 42.4664, -72.5795, 54.6917, -1.21293),
+(5, 'Hartlepool City center', 'Hartlepool', 'Durham', 54.6917, -1.21293, 35.994, -78.8986),
+(6, 'Durham University', 'Durham', 'Chester-lee street', 35.994, -78.8986, 42.4664, -72.5795),
+(7, 'Chester lee street Area', 'Chester lee street', 'Gatehead', 37.3563, -77.4517, 55.5962, -4.55116),
+(8, 'University of Sunderland', 'Sunderland', 'Hartlepool', 42.4664, -72.5795, 54.6917, -1.21293),
+(9, 'Hartlepool City center', 'Gatehead', 'Durham', 54.6917, -1.21293, 55.5962, -4.55116),
+(10, 'south shield city center', 'south sheild', 'sunderland', 54.9948, -1.43498, 42.4664, -72.5795),
+(11, 'Chester lee street city center', 'chester lee street', 'Sunderland', 37.3563, -77.4517, 42.4664, -72.5795),
+(12, 'Chester lee street city center', 'chester lee street', 'durham', 37.3563, -77.4517, 35.994, -78.8986),
+(13, 'Sunderland University', 'Sunderland', 'Newcastle ', 42.4664, -72.5795, 54.9783, -1.61778),
+(14, 'Sunderland University', 'Sunderland', 'Hartlepool', 42.4664, -72.5795, 54.6917, -1.21293),
+(15, 'Stockton on tees University', 'Stockton on tees', 'Sunderland', 54.5705, -1.32898, 42.4664, -72.5795),
+(16, 'Sunderland University', 'Sunderland', 'London ', 51.4826, -0.0076589, 42.4664, -72.5795),
+(17, 'Newcastle University ', 'Newcastle', 'Durham', 54.9783, -1.61778, 35.994, -78.8986);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `journey`
+--
+ALTER TABLE `journey`
+  ADD PRIMARY KEY (`jour_id`);
+
+--
+-- Indexes for table `location`
+--
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`loc_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `journey`
+--
+ALTER TABLE `journey`
+  MODIFY `jour_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+--
+-- AUTO_INCREMENT for table `location`
+--
+ALTER TABLE `location`
+  MODIFY `loc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

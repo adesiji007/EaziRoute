@@ -1,0 +1,4 @@
+EaziRoute.MainActivity, EaziRoute;md5e27705b754bfefdd2a8fe30c62c54d9a.MainActivity
+EaziRoute.MainActivity, EaziRoute, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e27705b754bfefdd2a8fe30c62c54d9a.MainActivity
+EaziRoute.MainActivity;md5e27705b754bfefdd2a8fe30c62c54d9a.MainActivity
+eaziroute.MainActivity;md5e27705b754bfefdd2a8fe30c62c54d9a.MainActivity
